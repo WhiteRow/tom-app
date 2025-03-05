@@ -1,0 +1,23 @@
+.task-create {
+  @apply w-full flex items-end;
+}
+
+.task-create__input {
+  @apply text-6 text-white p-2 bg-transparent border-none;
+}
+
+.task-create__input:focus {
+  @apply outline-none;
+}
+
+.task-create__button {
+  @apply text-8 p-4 bg-brand-red color-white rounded-2 transition-colors; 
+}
+
+.task-create__button:hover {
+  @apply bg-brand-red-hov;
+}
+
+.task-create__button:active {
+  @apply opacity-64
+}

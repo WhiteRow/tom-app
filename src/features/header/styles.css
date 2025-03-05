@@ -1,0 +1,7 @@
+.header {
+  @apply w-full pb-6;
+}
+
+.header__title {
+  @apply font-400 text-10 text-white;
+}

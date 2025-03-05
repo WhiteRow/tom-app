@@ -3,25 +3,32 @@ import {
   presetAttributify,
   presetIcons,
   presetTypography,
-  presetUno,
   presetWebFonts,
   transformerDirectives,
-  transformerVariantGroup
+  transformerVariantGroup,
+  presetUno,
 } from 'unocss'
+
 
 export default defineConfig({
   shortcuts: [],
   theme: {
-    colors: {}
+    colors: {
+      'bg-black': '#242424',
+      'brand-red': '#ff545c',
+      'brand-red-hov': '#f1474f',
+    }
   },
   presets: [
-    presetUno(),
     presetAttributify(),
     presetIcons(),
     presetTypography(),
     presetWebFonts({
-      fonts: {},
+      fonts: {
+        roboto: 'Roboto'
+      },
     }),
+    presetUno,
   ],
   transformers: [
     transformerDirectives(),
