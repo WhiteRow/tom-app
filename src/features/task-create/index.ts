@@ -1,5 +1,5 @@
 import { elementsNames } from '../../shared/config'
-import { taskItem } from '../taskItem'
+import { taskItem } from '../task-item'
 
 import './styles.css'
 
