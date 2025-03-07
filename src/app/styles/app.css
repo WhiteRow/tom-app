@@ -1,17 +1,46 @@
 @unocss all;
 
 :root {
-  @apply font-roboto font-400 box-border bg-bg-black;
-}
-
-.tom {
-  @apply pt-14 px-12;
+  @apply font-roboto-mono font-400 text-text-white-0 box-border bg-bg-purple-dark-0;
 }
 
 .button {
   @apply bg-transparent border-none cursor-pointer;
 }
 
-.button--icon {
-  @apply flex items-center justify-center;
+.button--md {
+  @apply w-70px h-70px rounded-20px border-b-8px border-b-solid;
+}
+
+.button--md:active {
+  @apply border-b-6px;
+  transform: translateY(2px);
+}
+
+.button--primary {
+  @apply bg-brand-purple-0 border-b-shadow-brand-purple-0 transition-colors;
+}
+
+.button--primary:hover {
+  @apply bg-brand-purple-0-hover;
+}
+
+.button--red {
+  @apply bg-red-0 border-b-8px border-b-solid border-b-shadow-red-0 transition-colors;
+}
+
+.button--red:hover {
+  @apply bg-red-0-hover;
+}
+
+.input {
+  @apply text-text-white-1 cursor-pointer;
+}
+
+.tom {
+  @apply w-full;
+}
+
+.tasks-list {
+  @apply flex flex-wrap gap-42px w-full px-82px py-42px;
 }

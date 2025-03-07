@@ -1,0 +1,11 @@
+.task-item {
+  @apply flex flex-col gap-8px;
+}
+
+.task-item__container {
+  @apply w-fit py-24px pl-24px pr-36px bg-bg-purple-dark-1 rounded-20px border-b-8px border-solid border-shadow-purple-dark-0;
+}
+
+.task-item__title {
+  @apply text-24px;
+}

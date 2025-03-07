@@ -1,16 +1,15 @@
 import './styles/app.css';
 
-// import { setupCounter } from '../features/counter'
 import { elementsNames } from '../shared/config'
-import { header } from '../features/header'
 import { setupTaskCreate } from '../features/task-create'
+
+import bgImage0 from '../assets/bg-image-0.png'
 
 function createApp(root: string) {
   const { tasksList } = elementsNames
 
   const app = `
     <div class="tom">
-      ${header()}
       <main id="main"class="main">
         <div class="${tasksList}"></div>
       </main>
@@ -20,7 +19,6 @@ function createApp(root: string) {
   document.getElementById(root)!.innerHTML = app
 
   setupTaskCreate(document.querySelector<HTMLButtonElement>('#main')!)
-  // setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
 }
 
 export default createApp
