@@ -1,11 +1,52 @@
 .task-item {
-  @apply flex flex-col gap-8px;
+  @apply flex items-end gap-4 cursor-pointer;
+}
+
+.task-item--edit .task-item__edit {
+  @apply block;
+}
+
+.task-item--edit .task-item__title {
+  @apply hidden;
+}
+
+.task-item--edit .task-item__button-delete {
+  @apply opacity-20;
+}
+
+.task-item--edit .task-item__button-edit {
+  @apply bg-brand-purple-0-hover;
+}
+
+.task-item--completed .task-item__container {
+  background-color: #1d1e38;
+  border-color: #191a2d;
+}
+
+.task-item--completed .task-item__title {
+  color: #2d2f5c;
+}
+
+.task-item--completed .task-item__actions {
+  @apply opacity-50;
 }
 
 .task-item__container {
-  @apply w-fit py-24px pl-24px pr-36px bg-bg-purple-dark-1 rounded-20px border-b-8px border-solid border-shadow-purple-dark-0;
+  @apply display-none w-fit py-24px pl-24px pr-36px bg-bg-purple-dark-1 rounded-20px border-b-8px border-solid border-shadow-purple-dark-0 transition-all ease-in-out;
 }
 
 .task-item__title {
-  @apply text-24px;
+  @apply text-8 transition-all ease-in-out;
+}
+
+.task-item__actions {
+  @apply flex items-center gap-3;
+}
+
+.task-item__edit {
+  @apply hidden;
+}
+
+.task-item__edit-input {
+  @apply text-8;
 }

@@ -1,11 +1,23 @@
 @unocss all;
 
 :root {
-  @apply font-roboto-mono font-400 text-text-white-0 box-border bg-bg-purple-dark-0;
+  @apply font-micro-5 text-text-white-0 box-border bg-bg-purple-dark-0;
+}
+
+input {
+  @apply font-micro-5 text-text-white-0 bg-transparent border-none;
+}
+
+input:focus {
+  @apply outline-none;
+}
+
+button:disabled {
+  @apply cursor-no-drop;
 }
 
 .button {
-  @apply bg-transparent border-none cursor-pointer;
+  @apply m-0 bg-transparent border-none cursor-pointer;
 }
 
 .button--md {

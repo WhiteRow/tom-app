@@ -11,12 +11,16 @@ export function taskItem(options: ITaskItem) {
 
   const template = `
     <div class="${taskItem} ${taskItem}-selector">
-      <div class="${taskItem}__container">
-        <p class="${taskItem}__title">${options.title}</p>
+      <div class="${taskItem}__container ${taskItem}-container-selector">
+        <p class="${taskItem}__title ${taskItem}-title-selector">${options.title}</p>
+
+        <form class="${taskItem}__edit ${taskItem}-edit-selector">
+          <input class="${taskItem}__edit-input ${taskItem}-edit-input-selector" placeholder="my task" />
+        </form>
       </div>
       <div class="${taskItem}__actions">
-        <button class="button button--md button--red"></button>
-        <button class="button button--md button--primary"></button>
+        <button class="${taskItem}__button-delete button button--md button--red delete-button-selector"></button>
+        <button class="${taskItem}__button-edit button button--md button--primary edit-button-selector"></button>
       </div>
     </div>
   `

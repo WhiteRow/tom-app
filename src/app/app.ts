@@ -3,8 +3,6 @@ import './styles/app.css';
 import { elementsNames } from '../shared/config'
 import { setupTaskCreate } from '../features/task-create'
 
-import bgImage0 from '../assets/bg-image-0.png'
-
 function createApp(root: string) {
   const { tasksList } = elementsNames
 

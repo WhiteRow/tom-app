@@ -8,11 +8,13 @@
 .task-create__container::after {
   @apply absolute top-0 left-0 -z-1 w-full h-full rounded-b-40px opacity-15;
   content: '';
-  background-image: url('../../assets/bg-image-0.png');
+  background-image: url('../../assets/bg-image-0.jpg');
+  background-size: cover;
+  background-position: bottom center;
 }
 
 .task-create__title {
-  @apply font-500 text-64px text-center pt-80px;
+  @apply font-500 text-20 text-center pt-80px;
 }
 
 .task-create__form {
@@ -20,7 +22,7 @@
 }
 
 .task-create__input {
-  @apply text-24px w-600px h-70px px-4 pb-8px rounded-20px bg-bg-purple-dark-1 border-b-8px border-solid border-shadow-purple-dark-0 outline-0;
+  @apply text-8 w-600px h-70px px-4 pb-8px rounded-20px bg-bg-purple-dark-1 border-b-8px border-solid border-shadow-purple-dark-0 outline-0;
 }
 
 .task-create__button {

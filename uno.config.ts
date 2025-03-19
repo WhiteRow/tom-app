@@ -33,7 +33,7 @@ export default defineConfig({
     presetTypography(),
     presetWebFonts({
       fonts: {
-        'roboto-mono': 'Roboto Mono'
+        'micro-5': 'Micro 5'
       },
     }),
     presetUno,
