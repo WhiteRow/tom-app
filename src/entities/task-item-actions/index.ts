@@ -21,7 +21,13 @@ export function taskItemActions(element: HTMLElement | null) {
 
   function editModeStart() {
     element?.classList.add(`${taskItem}--edit`)
-    taskInput?.focus()
+
+    if (taskInput) {
+      taskTitle?.getHTML
+      taskInput.focus()
+      taskInput.value = taskTitle?.textContent || ''
+    }
+
     deleteButton?.setAttribute('disabled', 'true')
 
     element?.classList.remove(`${taskItem}--completed`)
@@ -31,6 +37,9 @@ export function taskItemActions(element: HTMLElement | null) {
     e.preventDefault()
 
     const newTitle = taskInput?.value
+
+    if (newTitle?.length === 0)
+      return
 
     if (taskTitle) {
       taskTitle.innerText = ''
