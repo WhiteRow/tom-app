@@ -2,6 +2,7 @@ import './styles/app.css';
 
 import { elementsNames } from '../shared/config'
 import { setupTaskCreate } from '../features/task-create'
+import { setupTasksStatus } from '../features/tasks-status'
 
 function createApp(root: string) {
   const { tasksList } = elementsNames
@@ -17,6 +18,7 @@ function createApp(root: string) {
   document.getElementById(root)!.innerHTML = app
 
   setupTaskCreate(document.querySelector<HTMLButtonElement>('#main')!)
+  setupTasksStatus(document.querySelector<HTMLButtonElement>('#main')!)
 }
 
 export default createApp
